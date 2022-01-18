@@ -1323,11 +1323,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpVelocity: 20
-<<<<<<< Updated upstream
-  moveSpeed: 10
-=======
   moveSpeed: 11
->>>>>>> Stashed changes
 --- !u!114 &1029425713
 MonoBehaviour:
   m_ObjectHideFlags: 0
