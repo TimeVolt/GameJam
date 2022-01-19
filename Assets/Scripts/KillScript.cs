@@ -30,7 +30,6 @@ public class KillScript : MonoBehaviour
     private bool Death()
     {
         RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .1f, KillLayer);
-        Debug.Log($"Death {raycastHit2d.collider} ");
         return raycastHit2d.collider != null;
     }
 }
