@@ -8,28 +8,29 @@ public class KillScript : MonoBehaviour
     private Player_Base playerBase;
     private Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
-    public float objx;
-    public float objy;
+    private Respawns respawn;
 
-    private void Awake()
+    void Awake()
     {
         playerBase = gameObject.GetComponent<Player_Base>();
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
+
+
+        respawn = gameObject.GetComponent<Respawns>();
     }
 
-    private void Update()
+    void Update()
     {
         if (Death())
         {
-            playerBase.transform.position = new Vector3(objx, objy, 0f);
-            rigidbody2d.velocity = new Vector2(0f, 0f);
+            respawn.Respawn();
         }
     }
 
-    private bool Death()
+    public bool Death()
     {
-        RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .1f, KillLayer);
+        RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, 0f, KillLayer);
         return raycastHit2d.collider != null;
     }
 }
