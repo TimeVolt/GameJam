@@ -11,6 +11,14 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider2d;
     public float jumpVelocity;
     public float moveSpeed;
+    Animator m_Animator;
+    bool m_Right;
+    bool m_Left;
+
+    void Start()
+    {
+        m_Animator = gameObject.GetComponent<Animator>();
+    }
 
     private void Awake()
     {
@@ -25,6 +33,21 @@ public class PlayerController : MonoBehaviour
         {
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
         }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            m_Animator.SetBool("L", true);
+            
+        }
+        else
+                m_Animator.SetBool("L", false);
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            m_Animator.SetBool("R", true);
+        }
+        else
+                m_Animator.SetBool("R", false);
 
         HandleMovement();
     }

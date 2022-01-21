@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: d781fcd94d4f7b543a17ec508b502358
+guid: d209f56275a532644a8db53ce46b1c4d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6205541374184467071
-    second: Robot Anim R_0
+      213: -146263298341386988
+    second: Robot Anim L_0
   - first:
-      213: 2254192895224153990
-    second: Robot Anim R_1
+      213: -8997685349890965695
+    second: Robot Anim L_1
   - first:
-      213: 1675281274933586453
-    second: Robot Anim R_2
+      213: 1809080205251852816
+    second: Robot Anim L_2
   - first:
-      213: -5504584233557252631
-    second: Robot Anim R_3
+      213: -3881898988445019555
+    second: Robot Anim L_3
   - first:
-      213: -4744817073041888004
-    second: Robot Anim R_4
+      213: -9181220381783411519
+    second: Robot Anim L_4
   - first:
-      213: 6919269165323987038
-    second: Robot Anim R_5
+      213: 1250705240221970077
+    second: Robot Anim L_5
   - first:
-      213: 7651183440360983218
-    second: Robot Anim R_6
+      213: -1200218537709952431
+    second: Robot Anim L_6
   - first:
-      213: -1494636333499825954
-    second: Robot Anim R_7
+      213: 6824144045232914539
+    second: Robot Anim L_7
   - first:
-      213: 4673650014191895591
-    second: Robot Anim R_8
+      213: -6416295428885692064
+    second: Robot Anim L_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,9 +93,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,9 +105,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Robot Anim R_0
+      name: Robot Anim L_0
       rect:
         serializedVersion: 2
         x: 0
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 185deb0affc71e9a0800000000000000
-      internalID: -6205541374184467071
+      spriteID: 4154faa1e4e58fdf0800000000000000
+      internalID: -146263298341386988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim R_1
+      name: Robot Anim L_1
       rect:
         serializedVersion: 2
         x: 100
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6878b07be70884f10800000000000000
-      internalID: 2254192895224153990
+      spriteID: 14f330798dcc12380800000000000000
+      internalID: -8997685349890965695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim R_2
+      name: Robot Anim L_2
       rect:
         serializedVersion: 2
         x: 200
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51aa74b817bcf3710800000000000000
-      internalID: 1675281274933586453
+      spriteID: 01a3a3c9cd42b1910800000000000000
+      internalID: 1809080205251852816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim R_3
+      name: Robot Anim L_3
       rect:
         serializedVersion: 2
         x: 0
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e5aa9addc9cb93b0800000000000000
-      internalID: -5504584233557252631
+      spriteID: d5259cbef69b02ac0800000000000000
+      internalID: -3881898988445019555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim R_4
+      name: Robot Anim L_4
       rect:
         serializedVersion: 2
         x: 100
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfc212dd206072eb0800000000000000
-      internalID: -4744817073041888004
+      spriteID: 1c4393bf4b0c59080800000000000000
+      internalID: -9181220381783411519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim R_5
+      name: Robot Anim L_5
       rect:
         serializedVersion: 2
         x: 200
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e58237065ae260060800000000000000
-      internalID: 6919269165323987038
+      spriteID: d9e662a1ac56b5110800000000000000
+      internalID: 1250705240221970077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim R_6
+      name: Robot Anim L_6
       rect:
         serializedVersion: 2
         x: 0
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ba41122dc67e2a60800000000000000
-      internalID: 7651183440360983218
+      spriteID: 152a5f65997f75fe0800000000000000
+      internalID: -1200218537709952431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim R_7
+      name: Robot Anim L_7
       rect:
         serializedVersion: 2
         x: 100
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed0c9517c2cf14be0800000000000000
-      internalID: -1494636333499825954
+      spriteID: b6084307ada34be50800000000000000
+      internalID: 6824144045232914539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim R_8
+      name: Robot Anim L_8
       rect:
         serializedVersion: 2
         x: 200
@@ -300,8 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72448640de32cd040800000000000000
-      internalID: 4673650014191895591
+      spriteID: 0614e4b6d4db4f6a0800000000000000
+      internalID: -6416295428885692064
       vertices: []
       indices: 
       edges: []
