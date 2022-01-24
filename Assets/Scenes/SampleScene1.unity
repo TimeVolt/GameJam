@@ -6374,13 +6374,12 @@ GameObject:
   - component: {fileID: 1029425710}
   - component: {fileID: 1029425709}
   - component: {fileID: 1029425713}
-  - component: {fileID: 1029425712}
-  - component: {fileID: 1029425714}
   - component: {fileID: 1029425708}
+  - component: {fileID: 1029425712}
   - component: {fileID: 1029425717}
-  - component: {fileID: 1029425716}
   - component: {fileID: 1029425715}
   - component: {fileID: 1029425718}
+  - component: {fileID: 1029425714}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -6518,6 +6517,7 @@ MonoBehaviour:
     m_Bits: 64
   jumpVelocity: 20
   moveSpeed: 11
+  hangTime: 0.2
 --- !u!114 &1029425713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6539,12 +6539,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1029425707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d41275827d6d3114fa76f0928cdefb26, type: 3}
+  m_Script: {fileID: 11500000, guid: e2be55ecbe3763f469ea20a9470118d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KillLayer:
-    serializedVersion: 2
-    m_Bits: 128
+  restartKey: 114
 --- !u!114 &1029425715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6557,21 +6555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff18f866efac1547b328d972902427f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1029425716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029425707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d41275827d6d3114fa76f0928cdefb26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KillLayer:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!114 &1029425717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6587,6 +6570,9 @@ MonoBehaviour:
   Checkpoints:
     serializedVersion: 2
     m_Bits: 256
+  KillLayer:
+    serializedVersion: 2
+    m_Bits: 128
   spawn: {x: 0, y: 0}
 --- !u!95 &1029425718
 Animator:

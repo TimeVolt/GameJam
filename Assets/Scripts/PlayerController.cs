@@ -12,14 +12,8 @@ public class PlayerController : MonoBehaviour
     public float jumpVelocity;
     public float moveSpeed;
     private int jump;
-    Animator m_Animator;
-    bool m_Right;
-    bool m_Left;
-
-    void Start()
-    {
-        m_Animator = gameObject.GetComponent<Animator>();
-    }
+    public float hangTime;
+    private float hangCounter;
 
     private void Awake()
     {
@@ -30,34 +24,26 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (jump >= 2 && Input.GetKeyDown(KeyCode.Space))
+        if (jump >= 2 && Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
             jump -= 1;
         }
-
-        if (Input.GetKey(KeyCode.LeftArrow))
+        else if (jump >= 2 && hangCounter > 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            m_Animator.SetBool("L", true);
-
-        }
-        else
-        {
-            m_Animator.SetBool("L", false);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            m_Animator.SetBool("R", true);
-        }
-        else
-        {
-            m_Animator.SetBool("R", false);
+            rigidbody2d.velocity = Vector2.up * jumpVelocity;
+            jump -= 1;
         }
         HandleMovement();
 
         if (IsGrounded())
         {
             jump = 2;
+            hangCounter = hangTime;
+        }
+        else
+        {
+            hangCounter -= Time.deltaTime;
         }
     }
 
