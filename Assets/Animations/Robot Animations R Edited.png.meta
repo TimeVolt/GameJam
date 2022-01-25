@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: c0412a77d93134347acd2df60a927b42
+guid: 2599eaffc27c0b744ae7f83aa03bbeae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5506384998006543264
-    second: Robot Anim L 1_0
+      213: -3951358139097127104
+    second: Robot Animations R Edited_0
   - first:
-      213: -6889772208066959513
-    second: Robot Anim L 1_1
+      213: 3502808487008990298
+    second: Robot Animations R Edited_1
   - first:
-      213: 1044726641487827320
-    second: Robot Anim L 1_2
+      213: 6514675604354317742
+    second: Robot Animations R Edited_2
   - first:
-      213: 2287726027694035505
-    second: Robot Anim L 1_3
+      213: -1488814688578291420
+    second: Robot Animations R Edited_3
   - first:
-      213: -2628811492857891558
-    second: Robot Anim L 1_4
+      213: -7526701920792022418
+    second: Robot Animations R Edited_4
   - first:
-      213: 5411458919836383108
-    second: Robot Anim L 1_5
+      213: 2293929982707614359
+    second: Robot Animations R Edited_5
   - first:
-      213: 1848663578854710860
-    second: Robot Anim L 1_6
+      213: -5226672790455493664
+    second: Robot Animations R Edited_6
   - first:
-      213: 849053815184371949
-    second: Robot Anim L 1_7
+      213: 3227951758665127958
+    second: Robot Animations R Edited_7
   - first:
-      213: 7557355996146636542
-    second: Robot Anim L 1_8
+      213: 1944007502076963559
+    second: Robot Animations R Edited_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Robot Anim L 1_0
+      name: Robot Animations R Edited_0
       rect:
         serializedVersion: 2
         x: 0
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06ca745b4046593b0800000000000000
-      internalID: -5506384998006543264
+      spriteID: 04764ca25b4f929c0800000000000000
+      internalID: -3951358139097127104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim L 1_1
+      name: Robot Animations R Edited_1
       rect:
         serializedVersion: 2
         x: 64
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7676fca2eac9260a0800000000000000
-      internalID: -6889772208066959513
+      spriteID: a54f460a2c97c9030800000000000000
+      internalID: 3502808487008990298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim L 1_2
+      name: Robot Animations R Edited_2
       rect:
         serializedVersion: 2
         x: 128
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 871d441685d9f7e00800000000000000
-      internalID: 1044726641487827320
+      spriteID: ead317822f6c86a50800000000000000
+      internalID: 6514675604354317742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim L 1_3
+      name: Robot Animations R Edited_3
       rect:
         serializedVersion: 2
         x: 0
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1325e1883b2afbf10800000000000000
-      internalID: 2287726027694035505
+      spriteID: 42938e6cdeaa65be0800000000000000
+      internalID: -1488814688578291420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim L 1_4
+      name: Robot Animations R Edited_4
       rect:
         serializedVersion: 2
         x: 64
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a15bdb210e5948bd0800000000000000
-      internalID: -2628811492857891558
+      spriteID: e62f0f03b78cb8790800000000000000
+      internalID: -7526701920792022418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim L 1_5
+      name: Robot Animations R Edited_5
       rect:
         serializedVersion: 2
         x: 128
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4877779673d591b40800000000000000
-      internalID: 5411458919836383108
+      spriteID: 792c7ee5a2da5df10800000000000000
+      internalID: 2293929982707614359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim L 1_6
+      name: Robot Animations R Edited_6
       rect:
         serializedVersion: 2
         x: 0
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4e56d6fab5c7a910800000000000000
-      internalID: 1848663578854710860
+      spriteID: 0eb53b70ac02777b0800000000000000
+      internalID: -5226672790455493664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim L 1_7
+      name: Robot Animations R Edited_7
       rect:
         serializedVersion: 2
         x: 64
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de0314942f178cb00800000000000000
-      internalID: 849053815184371949
+      spriteID: 6181557a50dfbcc20800000000000000
+      internalID: 3227951758665127958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot Anim L 1_8
+      name: Robot Animations R Edited_8
       rect:
         serializedVersion: 2
         x: 128
@@ -300,8 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef61d77ec3f11e860800000000000000
-      internalID: 7557355996146636542
+      spriteID: 7eaedf9f5808afa10800000000000000
+      internalID: 1944007502076963559
       vertices: []
       indices: 
       edges: []
