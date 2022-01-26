@@ -6124,6 +6124,7 @@ MonoBehaviour:
     m_Bits: 64
   jumpVelocity: 20
   moveSpeed: 11
+  jumpMax: 2
 --- !u!114 &1029425713
 MonoBehaviour:
   m_ObjectHideFlags: 0

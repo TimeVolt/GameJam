@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider2d;
     public float jumpVelocity;
     public float moveSpeed;
+    public int jumpMax;
     private int jump;
     Animator m_Animator;
     bool m_Right;
@@ -30,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (jump >= 2 && Input.GetKeyDown(KeyCode.Space))
+        if (jump >= jumpMax && Input.GetKeyDown(KeyCode.Space))
         {
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
             jump -= 1;
@@ -57,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
         if (IsGrounded())
         {
-            jump = 2;
+            jump = jumpMax;
         }
     }
 
