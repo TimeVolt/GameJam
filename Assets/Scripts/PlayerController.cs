@@ -34,7 +34,14 @@ public class PlayerController : MonoBehaviour
         if (jump >= jumpMax && Input.GetKeyDown(KeyCode.Space))
         {
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
-            jump -= 1;
+            if (!IsGrounded())
+            {
+                jump -= 1;
+            }
+            else
+            {
+                jump -= 2;
+            }
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
