@@ -12,8 +12,6 @@ public class PlayerController : MonoBehaviour
     public float jumpVelocity;
     public float moveSpeed;
     private int jump;
-    public float hangTime;
-    private float hangCounter;
     Animator m_Animator;
     bool m_Right;
     bool m_Left;
@@ -32,13 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (jump >= 2 && Input.GetKeyDown(KeyCode.Space) && IsGrounded())
-        {
-            rigidbody2d.velocity = Vector2.up * jumpVelocity;
-            jump -= 1;
-        }
-        
-        else if (jump >= 2 && hangCounter > 0 && Input.GetKeyDown(KeyCode.Space))
+        if (jump >= 1 && Input.GetKeyDown(KeyCode.Space))
         {
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
             jump -= 1;
@@ -61,22 +53,17 @@ public class PlayerController : MonoBehaviour
         {
             m_Animator.SetBool("R", false);
         }
-            HandleMovement();
+        HandleMovement();
 
         if (IsGrounded())
         {
             jump = 2;
-            hangCounter = hangTime;
-        }
-        else
-        {
-            hangCounter -= Time.deltaTime;
         }
     }
 
     private bool IsGrounded()
     {
-        RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .2f, platformsLayerMask);
+        RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, -1f, Vector2.down, .2f, platformsLayerMask);
         return raycastHit2d.collider != null;
     }
 
