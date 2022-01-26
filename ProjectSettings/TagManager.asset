@@ -14,7 +14,7 @@ TagManager:
   - Platforms
   - Kill Zone
   - Checkpoint
-  - Foreground
+  - 
   - 
   - 
   - 
@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3178660361
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 264407963
     locked: 0
