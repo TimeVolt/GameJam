@@ -15,14 +15,14 @@ public class PlayerController : MonoBehaviour
     private int jump;
     public int dashTime;
     //private DashingTime;
-    //Animator m_Animator;
-    //bool m_Right;
-    //bool m_Left;
+    Animator m_Animator;
+    bool m_Right;
+    bool m_Left;
 
-    //void Start()
-    //{
-    //    m_Animator = gameObject.GetComponent<Animator>();
-    //}
+    void Start()
+    {
+        m_Animator = gameObject.GetComponent<Animator>();
+    }
 
     private void Awake()
     {
@@ -39,23 +39,23 @@ public class PlayerController : MonoBehaviour
             jump -= 1;
         }
 
-        //if (Input.GetKey(KeyCode.LeftArrow))
-        //{
-        //    m_Animator.SetBool("L", true);
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        {
+            m_Animator.SetBool("L", true);
 
-        //}
-        //else
-        //{
-        //    m_Animator.SetBool("L", false);
-        //}
-        //if (Input.GetKey(KeyCode.RightArrow))
-        //{
-        //    m_Animator.SetBool("R", true);
-        //}
-        //else
-        //{
-        //    m_Animator.SetBool("R", false);
-        //}
+        }
+        else
+        {
+            m_Animator.SetBool("L", false);
+        }
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        {
+            m_Animator.SetBool("R", true);
+        }
+        else
+        {
+            m_Animator.SetBool("R", false);
+        }
 
         HandleMovement();
 
