@@ -13,14 +13,16 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public int jumpMax;
     private int jump;
-    Animator m_Animator;
-    bool m_Right;
-    bool m_Left;
+    public int dashTime;
+    //private DashingTime;
+    //Animator m_Animator;
+    //bool m_Right;
+    //bool m_Left;
 
-    void Start()
-    {
-        m_Animator = gameObject.GetComponent<Animator>();
-    }
+    //void Start()
+    //{
+    //    m_Animator = gameObject.GetComponent<Animator>();
+    //}
 
     private void Awake()
     {
@@ -31,57 +33,52 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (jump >= jumpMax && Input.GetKeyDown(KeyCode.Space))
+        if (jump >= jumpMax && Input.GetKeyDown(KeyCode.UpArrow) || jump >= jumpMax && Input.GetKey(KeyCode.W))
         {
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
-            if (!IsGrounded())
-            {
-                jump -= 1;
-            }
-            else
-            {
-                jump -= 2;
-            }
+            jump -= 1;
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            m_Animator.SetBool("L", true);
+        //if (Input.GetKey(KeyCode.LeftArrow))
+        //{
+        //    m_Animator.SetBool("L", true);
 
-        }
-        else
-        {
-            m_Animator.SetBool("L", false);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            m_Animator.SetBool("R", true);
-        }
-        else
-        {
-            m_Animator.SetBool("R", false);
-        }
+        //}
+        //else
+        //{
+        //    m_Animator.SetBool("L", false);
+        //}
+        //if (Input.GetKey(KeyCode.RightArrow))
+        //{
+        //    m_Animator.SetBool("R", true);
+        //}
+        //else
+        //{
+        //    m_Animator.SetBool("R", false);
+        //}
+
         HandleMovement();
 
         if (IsGrounded())
         {
             jump = jumpMax;
+            //DashingTime = dashTime;
         }
     }
 
     private bool IsGrounded()
     {
-        RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, -1f, Vector2.down, .2f, platformsLayerMask);
+        RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .001f, platformsLayerMask);
         return raycastHit2d.collider != null;
     }
 
     private void HandleMovement()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             rigidbody2d.velocity = new Vector2(-moveSpeed, rigidbody2d.velocity.y);
         }
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             rigidbody2d.velocity = new Vector2(+moveSpeed, rigidbody2d.velocity.y);
         }
@@ -89,5 +86,24 @@ public class PlayerController : MonoBehaviour
         {
             rigidbody2d.velocity = new Vector2(0, rigidbody2d.velocity.y);
         }
-    }   
+    }
+
+    private void Dash()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+    }
 }
