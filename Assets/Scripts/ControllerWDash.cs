@@ -41,7 +41,6 @@ public class ControllerWDash : MonoBehaviour
         //if (Input.GetKey(KeyCode.LeftArrow))
         //{
         //    m_Animator.SetBool("L", true);
-
         //}
         //else
         //{

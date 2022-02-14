@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             m_Animator.SetBool("L", true);
-
         }
         else
         {
