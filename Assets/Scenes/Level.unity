@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What is a house but a series of walls made to protect a (meat) robot from
+  m_text: What is a house but a series of walls made to protect a meat robot from
     the reality of life?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4879,7 +4879,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a485c675d295a5a41948cb0c1738ed41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c26ce513d0166a54598a21c58697f387, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4898,7 +4898,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574424158}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -90.9, y: 0.1, z: 0}
+  m_LocalPosition: {x: -90.875, y: 0.125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 362837649}
@@ -8248,14 +8248,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 1.28}
+    oldSize: {x: 0.5, y: 1}
     newSize: {x: 0.64, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.23, y: 0.89}
+  m_Size: {x: 0.25, y: 0.7}
   m_EdgeRadius: 0
 --- !u!50 &1029425709
 Rigidbody2D:
@@ -8337,7 +8337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029425707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 1.25, z: 0}
+  m_LocalPosition: {x: -9.52, y: 1.2, z: 0}
   m_LocalScale: {x: 2.25, y: 2.25, z: 1}
   m_Children:
   - {fileID: 1520479633}
