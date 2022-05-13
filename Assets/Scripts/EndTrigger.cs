@@ -15,9 +15,10 @@ public class EndTrigger : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("EndTrigger"))
+        if (transform.gameObject.CompareTag("EndTrigger"))
         {
             SceneManager.LoadScene(levelChange);
         }
     }
+
 }

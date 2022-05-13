@@ -9,7 +9,7 @@ public class QuitKey : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(quitKey))
+        if (Input.GetKey(quitKey))
         {
             Application.Quit();
         }
