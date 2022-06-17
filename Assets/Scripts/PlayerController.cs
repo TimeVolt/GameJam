@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (jump >= jumpMax && Input.GetKeyDown(KeyCode.UpArrow) || jump >= jumpMax && Input.GetKey(KeyCode.W))
+        if (jump >= jumpMax && Input.GetKeyDown(KeyCode.UpArrow))
         {
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
             jump -= 1;
